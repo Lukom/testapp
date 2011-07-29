@@ -1,3 +1,5 @@
 en:
   resources:
     products: 'prodducts'
+  named_routes_path:
+    home_index: house
