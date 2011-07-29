@@ -3,3 +3,4 @@ en:
     products: 'prodducts'
   named_routes_path:
     home_index: house
+    home_index_with_locale: house_wl

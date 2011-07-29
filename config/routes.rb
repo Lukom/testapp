@@ -1,12 +1,9 @@
 Testapp::Application.routes.draw do
-  get "home/index"
-
-  get "home/some_page"
-
   localized(I18n.available_locales, :verbose => true) do
-    scope "/:locale", :locale => /#{I18n.available_locales.join('|')}/ do
+    match 'home' => 'home#index', :as => :home_index
+    scope "/:locale" do
+      match 'home' => 'home#index', :as => :home_index_with_locale
       resources :products
-      match '/home', :to => 'home#index', :as => 'home_index'
       root :to => 'products#index'
     end
   end 
