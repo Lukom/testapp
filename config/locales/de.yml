@@ -1,3 +1,3 @@
 de:
-  resource:
-    product: 'producto'
+  resources:
+    products: 'productos'
