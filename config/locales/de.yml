@@ -1,6 +1,5 @@
 de:
   resources:
     products: 'productos'
-  named_routes_path:
+  named_routes:
     home_index: house1
-    home_index_with_locale: house1_wl
